@@ -24,7 +24,7 @@ export const generateResource =  async (uri: Uri): Promise<void> => {
 
       await generateCode(pascalCaseName, baseDirectory);
 
-      window.showInformationMessage("GetX files successfully created");
+      window.showInformationMessage("GetX files successfully created 👏🏻👏🏻👏🏻🤘🏻");
       
     } catch(err) {
       console.log(err);

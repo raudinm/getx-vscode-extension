@@ -3,9 +3,19 @@
 	"displayName": "GetX Resources",
 	"description": "Generate GetX recomended folder structure and files resources",
 	"version": "1.0.0",
+	"publisher": "RaudinMoreno",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
+	"bugs": {
+    "url": "https://github.com/raudinm/getx-vscode-extension/issues",
+    "email": "raudin247@gmail.com"
+  },
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/raudinm/getx-vscode-extension"
+  },
+	"icon": "assets/logo.png",
 	"categories": [
 		"Snippets",
     "Programming Languages"
@@ -19,11 +29,11 @@
 		"commands": [
 			{
 				"command": "getxresources.generateStructure",
-				"title": "Geneterate GetX Folders Structure"
+				"title": "GetX: Geneterate Folders"
 			},
 			{
 				"command": "getxresources.generateResource",
-				"title": "Geneterate GetX Resource files"
+				"title": "GetX: Geneterate files"
 			}
 		]
 	},

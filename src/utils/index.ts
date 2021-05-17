@@ -40,10 +40,10 @@ export const generatePageTemplate = (resourceName: string): string => {
 };
 
 export const generateBindingTemplate = (resourceName: string): string => {
-  const snakeCaseBlocName = changeCase.snakeCase(resourceName.toLowerCase());
+  const snakeCaseName = changeCase.snakeCase(resourceName.toLowerCase());
   const bindingTemplate: string = `
   import 'package:get/get.dart';
-  import '../controllers/${snakeCaseBlocName}_controller.dart';
+  import '../controllers/${snakeCaseName}_controller.dart';
 
 
   class ${resourceName}Binding implements Bindings {
