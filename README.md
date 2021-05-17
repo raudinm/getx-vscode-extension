@@ -12,10 +12,10 @@ This extension can be installed from the [VSCode Marketplace](https://marketplac
 
 ## Commands
 
-| Command                     | Description                                           |
-| --------------------------- | ----------------------------------------------------- |
-| `GetX: Geneterate Folders`  | Generate the recommended Folder Structure             |
-| `GetX: Geneterate files`    | Generate recourse files: Controller, Page and Binding |
+| Command                   | Description                                           |
+| ------------------------- | ----------------------------------------------------- |
+| `GetX: Generate Folders`  | Generate the recommended Folder Structure             |
+| `GetX: Generate files`    | Generate resource files: Controller, Page and Binding |
 
 You can activate the commands by launching the command palette (View -> Command Palette) and running entering the command name.
 
