@@ -1,6 +1,6 @@
-# getxstructure README
+# GetX Resources vs code extension
 
-This is the README for your extension "getxstructure". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "GetX Resource". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 

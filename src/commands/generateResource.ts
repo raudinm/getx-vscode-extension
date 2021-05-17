@@ -15,6 +15,10 @@ export const generateResource =  async (uri: Uri): Promise<void> => {
     try {
     
       const resourceName = await promptForResourceName();
+      if(!resourceName || resourceName.length === 0) {
+        window.showErrorMessage("You must provide a resource name to generate the files");
+        return;
+      }
       const pascalCaseName = changeCase.pascalCase(resourceName!.toLowerCase());
       const baseDirectory = `${projectFolder}/lib/app`;
 
@@ -79,19 +83,19 @@ async function createFile(
   type: "controller" | "binding" | "page"
 ): Promise<void> {
 
-  const snakeCaseBlocName = changeCase.snakeCase(fileName.toLowerCase());
+  const snakeCaseName = changeCase.snakeCase(fileName.toLowerCase());
   let targetPath: string;
 
   if(type === "binding") {
-    targetPath = `${targetDirectory}/${snakeCaseBlocName}_binding.dart`;
+    targetPath = `${targetDirectory}/${snakeCaseName}_binding.dart`;
   } else if(type === "controller") {
-    targetPath = `${targetDirectory}/${snakeCaseBlocName}_controller.dart`;
+    targetPath = `${targetDirectory}/${snakeCaseName}_controller.dart`;
   } else {
-    targetPath = `${targetDirectory}/${snakeCaseBlocName}_page.dart`;
+    targetPath = `${targetDirectory}/${snakeCaseName}_page.dart`;
   }
   
   if (existsSync(targetPath)) {
-    throw Error(`${snakeCaseBlocName}.dart already exists`);
+    throw Error(`${snakeCaseName}.dart already exists`);
   }
  
   return new Promise<void>(async (resolve, reject) => {
