@@ -2,7 +2,7 @@
 	"name": "getxresources",
 	"displayName": "GetX Resources",
 	"description": "Generate GetX recomended folder structure and files resources",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"publisher": "RaudinMoreno",
 	"license": "MIT",
 	"engines": {

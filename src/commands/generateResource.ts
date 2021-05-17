@@ -24,7 +24,7 @@ export const generateResource =  async (uri: Uri): Promise<void> => {
 
       await generateCode(pascalCaseName, baseDirectory);
 
-      window.showInformationMessage("GetX files successfully created 👏🏻👏🏻👏🏻🤘🏻");
+      window.showInformationMessage(`GetX ${resourceName} files successfully created 👏🏻👏🏻👏🏻🤘🏻`);
       
     } catch(err) {
       console.log(err);
@@ -73,7 +73,7 @@ async function generateCode(
 function promptForResourceName(): Thenable<string | undefined> {
   const resourceNamePromptOptions: InputBoxOptions = {
     prompt: "Controller Name, Page or Binding",
-    placeHolder: "Home",
+    placeHolder: "home",
   };
   return window.showInputBox(resourceNamePromptOptions);
 }
